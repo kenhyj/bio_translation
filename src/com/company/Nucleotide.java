@@ -1,8 +1,17 @@
 package com.company;
 
 public class Nucleotide {
+    String seq; // make sure all of the seq is capitalized
 
 
+    // constructor
+    /* @param the sequence is the sequence of nucleotide (either deoxyribonucleic acid aka DNA
+    * or ribonucleic acid aka RNA)
+    * */
+    public Nucleotide(String sequence){
+        this.seq = sequence;
+        seq.toUpperCase();
+    }
 
     // all the letters should be capitalized.
     // the input characters will be capitalized on its own

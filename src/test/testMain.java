@@ -7,7 +7,7 @@ import org.junit.Before;
 
 public class testMain {
     @Before
-    public void runBefore() {
+    public void runBefore() {}
 
     @Test
     public void testDMA2RNA(){
