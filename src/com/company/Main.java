@@ -1,109 +1,33 @@
 package com.company;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application {
+    // reference: https://www.youtube.com/watch?v=FLkOX4Eez6o
+
+    Button button;
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        launch(args);
     }
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("Central Dogma of Biology+Other f(n)"); //main stage or window
+        this.button = new Button(); // this is a button
+        button.setText("Click Me");
 
-
-    // all the letters should be capitalized.
-    // the input characters will be capitalized on its own
-
-    // DNA -> complement DNA (only one nucleotide at a time)
-    String dna2cdna (String dna) {
-        switch (dna) {
-            case "A":
-                return "T";
-//            break;
-
-            case "T":
-                return "A";
-//            break;
-            case "C":
-                return "G";
-//            break;
-            case "G":
-                return "C";
-//            break;
-            default:
-                return null; // i think we should throw an exception here
-        }
-    }
-
-    // RNA -> DNA (only one nucleotide at a time)
-    String rna2dna(String rna){
-        switch (rna) {
-            case "A":
-                return "T";
-//            break;
-            case "U":
-                return "A";
-//            break;
-            case "C":
-                return "G";
-//            break;
-            case "G":
-                return "C";
-//            break;
-            default:
-                return null;
-        }
+        StackPane layout = new StackPane();
+        layout.getChildren().add(button);
 
     }
 
 
-    // DNA -> RNA (one nucleotide at a time)
-    String dna2mrna(String dna) {
-        switch (dna) {
-            case "A":
-                return "U";
-//            break;
-            case "U":
-                return "A";
-//            break;
-            case "C":
-                return "G";
-//            break;
-            case "G":
-                return "C";
-//            break;
-            default:
-                return null; // exception should be better here
-        }
-    }
-
-    // RNA -> AA chain
-    String rna2aa(String rna) {
-            return null;
-    }
-
-// DNA -> AA chain
-// 2 ways to implement this
-// 1) DNA -> RNA then RNA-> AA chain
-// 2) DNA -> AA chain. // may be faster, but harder to implement and update.
-
-
-
-/* amino acid table
-    U               A              C              G
-U   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-A   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-C   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-G   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-
-alanine = ala = A
-arginine = arg = R
-asparagine = asn = N
-aspartic acid = asp = D
-cysteine = cys = C
-glutamic acid = =
-
- */
     }
 
 
