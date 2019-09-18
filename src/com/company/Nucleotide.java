@@ -9,14 +9,20 @@ public class Nucleotide {
     * or ribonucleic acid aka RNA)
     * */
     public Nucleotide(String sequence){
-        this.seq = sequence;
-        seq.toUpperCase();
+        String s = sequence.toUpperCase();
+        if (false) {
+            //suppose you input Z, no nucleotide called Z exists
+            // suppopse you input AUGTZ,
+            this.seq = s;
+        }
+        else {
+            // throw an exception
+        }
     }
 
-    // all the letters should be capitalized.
-    // the input characters will be capitalized on its own
-
-    // DNA -> complement DNA (only one nucleotide at a time)
+    /* all the letters should be capitalized.
+    the input characters will be capitalized on its own
+    DNA -> complement DNA (only one nucleotide at a time) */
     String dna2cdna (String dna) {
         switch (dna) {
             case "A":
@@ -36,28 +42,6 @@ public class Nucleotide {
                 return null; // i think we should throw an exception here
         }
     }
-
-    // RNA -> DNA (only one nucleotide at a time)
-    String rna2dna(String rna){
-        switch (rna) {
-            case "A":
-                return "T";
-//            break;
-            case "U":
-                return "A";
-//            break;
-            case "C":
-                return "G";
-//            break;
-            case "G":
-                return "C";
-//            break;
-            default:
-                return null;
-        }
-
-    }
-
 
     // DNA -> RNA (one nucleotide at a time)
     String dna2mrna(String dna) {
