@@ -16,10 +16,10 @@ public class Nucleotide {
         String s = sequence.toUpperCase();
         // Todo:
         //https://stackoverflow.com/questions/8923398/regex-doesnt-work-in-string-matches
-        if (s.matches("[^AUTCG]")) { // [^AUTCG]
+        if (s.matches(".*[^AUTCG]+.*")) { // [^AUTCG]
           // throw an exception
           // suppose you input Z, no nucleotide called Z exists
-          // suppopse you input AUGTZ,
+          // suppose you input AUGTZ,
           throw new InvalidInputString("DNA have ATCG, RNA have AUCG, don't put anything else!");
         }
         else {
@@ -32,54 +32,10 @@ public class Nucleotide {
       return this.seq;
     }
 
-    /* all the letters should be capitalized.
-    the input characters will be capitalized on its own
-    DNA -> complement DNA (only one nucleotide at a time) */
-    String dna2cdna (String dna) {
-        switch (dna) {
-            case "A":
-                return "T";
-//            break;
-
-            case "T":
-                return "A";
-//            break;
-            case "C":
-                return "G";
-//            break;
-            case "G":
-                return "C";
-//            break;
-            default:
-                throw new InvalidInputString("DNA have ATCG, " +
-                        "RNA have AUCG, don't put anything else!");
-        }
-    }
-
-    // DNA -> RNA (one nucleotide at a time)
-    String dna2mrna(String dna) {
-        switch (dna) {
-            case "A":
-                return "U";
-//            break;
-            case "U":
-                return "A";
-//            break;
-            case "C":
-                return "G";
-//            break;
-            case "G":
-                return "C";
-//            break;
-            default:
-                throw new InvalidInputString("DNA have ATCG, " +
-                        "RNA have AUCG, don't put anything else!");
-        }
-    }
 
     // RNA -> AA chain
-    String rna2aa(String rna) {
-        return null;
+    public String rna2aa(String rna) {
+        return "empty";
     }
 
 // DNA -> AA chain

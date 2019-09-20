@@ -64,6 +64,26 @@ public class testMain {
         }
     }
     @Test
+    public void testConstrExceptionZZ(){
+        try {
+            DNA nucleotideDZ  = new DNA("ZZ");
+            fail ("You cannot have nucleotides outside of AUTCG") ;
+        } catch (InvalidInputString iis) {
+            //expected
+            System.out.println("You caught the string input exception. Nice.");
+        }
+    }
+    @Test
+    public void testConstrExceptionZA(){
+        try {
+            DNA nucleotideDZ  = new DNA("ZA");
+            fail ("You cannot have nucleotides outside of AUTCG") ;
+        } catch (InvalidInputString iis) {
+            //expected
+            System.out.println("You caught the string input exception. Nice.");
+        }
+    }
+    @Test
     public void testConstrExceptionAZ(){
         try {
             DNA nucleotideDZ  = new DNA("AZ");
@@ -76,23 +96,29 @@ public class testMain {
 
     @Test
     /* testing if the single nucleotide are returned properly*/
-    public void testDNA2RNA(){
+    public void testSingleDNA2cDNA(){
       DNA dA = new DNA("A");
+      assertEquals("T", dA.singleDna2cdna(dA.getSequence() ));
       DNA dT = new DNA("T");
+      assertEquals("A", dT.singleDna2cdna(dT.getSequence() ));
       DNA dC = new DNA("C");
+      assertEquals("G", dC.singleDna2cdna(dC.getSequence() ));
       DNA dG = new DNA("G");
-      DNA da = new DNA("a");
-      DNA dt = new DNA("t");
-      DNA dc = new DNA("c");
-      DNA dg = new DNA("g");
-
-      RNA rA = new RNA("A");
-      RNA rT = new RNA("T");
-      RNA rC = new RNA("C");
-      RNA rG = new RNA("G");
-      RNA ra = new RNA("a");
-      RNA rt = new RNA("t");
-      RNA rc = new RNA("c");
-      RNA rg = new RNA("g");
+      assertEquals("C", dG.singleDna2cdna(dG.getSequence() ));
     }
+
+    @Test
+    /* testing if the single nucleotide are returned properly*/
+    public void testSingleDNA2RNA(){
+        DNA dA = new DNA("A");
+        assertEquals("U", dA.singleDna2mrna(dA.getSequence() ));
+        DNA dT = new DNA("U");
+        assertEquals("A", dT.singleDna2mrna(dT.getSequence() ));
+        DNA dC = new DNA("C");
+        assertEquals("G", dC.singleDna2mrna(dC.getSequence() ));
+        DNA dG = new DNA("G");
+        assertEquals("C", dG.singleDna2mrna(dG.getSequence() ));
+    }
+
+
 }
