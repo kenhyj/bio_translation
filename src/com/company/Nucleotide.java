@@ -1,5 +1,7 @@
 package com.company;
 
+import exceptions.InvalidInputString;
+
 import java.util.InputMismatchException;
 
 public class Nucleotide {
@@ -18,7 +20,7 @@ public class Nucleotide {
           // throw an exception
           // suppose you input Z, no nucleotide called Z exists
           // suppopse you input AUGTZ,
-          throw(InputMismatchException e);
+          throw new InvalidInputString("DNA have ATCG, RNA have AUCG, don't put anything else!");
         }
         else {
           this.seq = s;
