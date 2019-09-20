@@ -1,7 +1,9 @@
 package com.company;
 
+import java.util.InputMismatchException;
+
 public class Nucleotide {
-    String seq; // make sure all of the seq is capitalized
+    private String seq; // make sure all of the seq is capitalized
 
 
     // constructor
@@ -10,14 +12,22 @@ public class Nucleotide {
     * */
     public Nucleotide(String sequence){
         String s = sequence.toUpperCase();
-        if (false) {
-            //suppose you input Z, no nucleotide called Z exists
-            // suppopse you input AUGTZ,
-            this.seq = s;
+        // Todo:
+        //https://stackoverflow.com/questions/8923398/regex-doesnt-work-in-string-matches
+        if (s.matches("[^AUTCG]]")) { // [^AUTCG]
+          // throw an exception
+          // suppose you input Z, no nucleotide called Z exists
+          // suppopse you input AUGTZ,
+          throw(InputMismatchException e);
         }
         else {
-            // throw an exception
+          this.seq = s;
         }
+    }
+
+    /* getter for Nucleotide.seq */
+    public String getSequence(){
+      return this.seq;
     }
 
     /* all the letters should be capitalized.
