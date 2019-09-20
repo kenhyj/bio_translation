@@ -16,7 +16,7 @@ public class Nucleotide {
         String s = sequence.toUpperCase();
         // Todo:
         //https://stackoverflow.com/questions/8923398/regex-doesnt-work-in-string-matches
-        if (s.matches("[^AUTCG]]")) { // [^AUTCG]
+        if (s.matches("[^AUTCG]")) { // [^AUTCG]
           // throw an exception
           // suppose you input Z, no nucleotide called Z exists
           // suppopse you input AUGTZ,
@@ -51,7 +51,8 @@ public class Nucleotide {
                 return "C";
 //            break;
             default:
-                return null; // i think we should throw an exception here
+                throw new InvalidInputString("DNA have ATCG, " +
+                        "RNA have AUCG, don't put anything else!");
         }
     }
 
@@ -71,7 +72,8 @@ public class Nucleotide {
                 return "C";
 //            break;
             default:
-                return null; // exception should be better here
+                throw new InvalidInputString("DNA have ATCG, " +
+                        "RNA have AUCG, don't put anything else!");
         }
     }
 
