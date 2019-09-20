@@ -51,6 +51,12 @@ public class testMain {
       assertEquals("C", nucleotideRc.getSequence() );
       Nucleotide nucleotideRg = new RNA("g");
       assertEquals("G", nucleotideRg.getSequence() );
+
+        Nucleotide nucleotideDDspace = new DNA("a  t");
+        assertEquals("AT", nucleotideDDspace.getSequence() );
+
+        Nucleotide nucleotideRRspace = new RNA("a  u");
+        assertEquals("AU", nucleotideRRspace.getSequence() );
     }
 
     @Test
@@ -111,13 +117,13 @@ public class testMain {
     /* testing if the single nucleotide are returned properly*/
     public void testSingleDNA2RNA(){
         DNA dA = new DNA("A");
-        assertEquals("U", dA.singleDna2mrna(dA.getSequence() ));
+        assertEquals("U", dA.singleDna2rna(dA.getSequence() ));
         DNA dT = new DNA("U");
-        assertEquals("A", dT.singleDna2mrna(dT.getSequence() ));
+        assertEquals("A", dT.singleDna2rna(dT.getSequence() ));
         DNA dC = new DNA("C");
-        assertEquals("G", dC.singleDna2mrna(dC.getSequence() ));
+        assertEquals("G", dC.singleDna2rna(dC.getSequence() ));
         DNA dG = new DNA("G");
-        assertEquals("C", dG.singleDna2mrna(dG.getSequence() ));
+        assertEquals("C", dG.singleDna2rna(dG.getSequence() ));
     }
 
 

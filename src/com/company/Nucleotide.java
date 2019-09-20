@@ -11,10 +11,12 @@ public class Nucleotide {
     // constructor
     /* @param the sequence is the sequence of nucleotide (either deoxyribonucleic acid aka DNA
     * or ribonucleic acid aka RNA)
+    * It will convert the string into uppercase and remove any whitespaces
     * */
     public Nucleotide(String sequence){
         String s = sequence.toUpperCase();
-        // Todo:
+//        s = s.trim();
+        s = s.replaceAll("\\s+","");
         //https://stackoverflow.com/questions/8923398/regex-doesnt-work-in-string-matches
         if (s.matches(".*[^AUTCG]+.*")) { // [^AUTCG]
           // throw an exception

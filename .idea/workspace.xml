@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="901fb531-c773-4a2e-824e-8639d2fa50c2" name="Default Changelist" comment="nucleotide constructor. working on exception handling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bio_translation/com/company/Nucleotide.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bio_translation/com/company/Nucleotide.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DNA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Nucleotide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Nucleotide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RNA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/testMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Nucleotide.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <caret line="17" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,8 +63,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/DNA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="589">
+              <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <folding>
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#161#162#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1482">
-              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+            <state relative-caret-position="475">
+              <caret line="57" selection-start-line="57" selection-end-line="58" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -99,8 +100,8 @@
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/RNA.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/com/company/DNA.java" />
         <option value="$PROJECT_DIR$/src/com/company/RNA.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DNA.java" />
         <option value="$PROJECT_DIR$/src/test/testMain.java" />
         <option value="$PROJECT_DIR$/src/com/company/Nucleotide.java" />
       </list>
@@ -281,27 +282,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testMain_testConstrExceptionZA - 2019.09.19 at 22h 13m 20s.xml">
-      <configuration name="testMain.testConstrExceptionZA" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMain_testConstrExceptionZA - 2019.09.19 at 22h 17m 27s.xml">
-      <configuration name="testMain.testConstrExceptionZA" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMain - 2019.09.19 at 22h 17m 52s.xml">
-      <configuration name="testMain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMain_testConstrExceptionZZ - 2019.09.19 at 22h 18m 00s.xml">
-      <configuration name="testMain.testConstrExceptionZZ" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMain - 2019.09.19 at 22h 18m 59s.xml">
-      <configuration name="testMain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 19m 33s.xml">
-      <configuration name="testMain.testConstr" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 20m 08s.xml">
-      <configuration name="testMain.testConstr" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testMain - 2019.09.19 at 22h 20m 12s.xml">
       <configuration name="testMain" configurationId="JUnit" />
     </history-entry>
@@ -310,6 +290,27 @@
     </history-entry>
     <history-entry file="testMain - 2019.09.19 at 22h 27m 26s.xml">
       <configuration name="testMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain - 2019.09.19 at 22h 30m 46s.xml">
+      <configuration name="testMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 51m 30s.xml">
+      <configuration name="testMain.testConstr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 52m 00s.xml">
+      <configuration name="testMain.testConstr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain - 2019.09.19 at 22h 54m 44s.xml">
+      <configuration name="testMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 56m 33s.xml">
+      <configuration name="testMain.testConstr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 57m 12s.xml">
+      <configuration name="testMain.testConstr" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMain_testConstr - 2019.09.19 at 22h 57m 19s.xml">
+      <configuration name="testMain.testConstr" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -392,20 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RNA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DNA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exceptions/InvalidInputString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -417,17 +404,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RNA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DNA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+        <state relative-caret-position="475">
+          <caret line="57" selection-start-line="57" selection-end-line="58" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Nucleotide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <caret line="17" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

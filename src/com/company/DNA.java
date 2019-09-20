@@ -6,15 +6,13 @@ public class DNA extends Nucleotide{
     public DNA(String sequence) {
         super(sequence);
     }
-    /* all the letters should be capitalized.
-the input characters will be capitalized on its own
-DNA -> complement DNA (only one nucleotide at a time) */
+
+    /*  DNA -> complement DNA (only one nucleotide at a time) */
     public String singleDna2cdna (String dna) {
         switch (dna) {
             case "A":
                 return "T";
 //            break;
-
             case "T":
                 return "A";
 //            break;
@@ -31,7 +29,7 @@ DNA -> complement DNA (only one nucleotide at a time) */
     }
 
     // DNA -> RNA (one nucleotide at a time)
-    public String singleDna2mrna(String dna) {
+    public String singleDna2rna(String dna) {
         switch (dna) {
             case "A":
                 return "U";
