@@ -2,11 +2,39 @@ package com.company;
 
 import exceptions.InvalidInputString;
 
+import java.util.HashMap;
 import java.util.InputMismatchException;
+import java.util.Map;
 
 public class Nucleotide {
     private String seq; // make sure all of the seq is capitalized
+    /* amino acid table
+     */
 
+    //public Map<String, String> codontable;
+    /*
+    * UUU UUC                                                                       = Phe f
+    * UUA UUG           CUU CUC CUA CUG                                             = Leu
+    *                                    AUU AUC AUA                                = Ile
+    *                                    AUG                                        = Met / start
+    *                                                     GUU GUC GUA GUG           = Val
+    * UCU UCC UCA UCG                    AGU AGC                                    = Ser
+    *                   CCU CCC CCA CCG                                             = Pro
+    *                                    ACU ACC ACA ACG                            = Thr
+    *                                                     GCU GCC GCA GCG           = Ala
+    * UAU UAC                                                                       = Tyr
+    *                   CAU CAC                                                     = His
+    *                   CAA CAG                                                     = Gln
+    *                                    AAU AAC                                    = Asn
+    *                                    AAA AAG                                    = Lys
+    *                                                     GAU GAC                   = Asp
+    *                                                     GAA GAG                   = Glu
+    * UGC UGU                                                                       = Cys c
+    * UGG                                                                           = Trp
+    *                   CGU CGC CGA CGG  AGA AGG                                    = Arg
+    *                                                     GGU GGC GGA GGG           = Gly
+    * UGA UAA UAG                                                                   = Stop
+    * */
 
     // constructor
     /* @param the sequence is the sequence of nucleotide (either deoxyribonucleic acid aka DNA
@@ -17,6 +45,8 @@ public class Nucleotide {
         String s = sequence.toUpperCase();
 //        s = s.trim();
         s = s.replaceAll("\\s+","");
+        s = s.replace("?","");
+        s = s.replace("-","");
         //https://stackoverflow.com/questions/8923398/regex-doesnt-work-in-string-matches
         if (s.matches(".*[^AUTCG]+.*")) { // [^AUTCG]
           // throw an exception
@@ -47,23 +77,5 @@ public class Nucleotide {
 
 
 
-/* amino acid table
-    U               A              C              G
-U   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
 
-A   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-C   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-G   U   A   C   G   U  A   C   G   U  A   C   G   U   A   C   G
-
-
-alanine = ala = A
-arginine = arg = R
-asparagine = asn = N
-aspartic acid = asp = D
-cysteine = cys = C
-glutamic acid = =
-
- */
 }
