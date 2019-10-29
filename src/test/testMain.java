@@ -19,43 +19,43 @@ public class testMain {
       DNA nucleotideDA = new DNA("A");
       assertEquals("A", nucleotideDA.getSequence() );
         DNA DT = new DNA("T");
-      assertEquals("T", nucleotideDT.getSequence() );
+      assertEquals("T", DT.getSequence() );
         DNA DC = new DNA("C");
-      assertEquals("C", nucleotideDC.getSequence() );
+      assertEquals("C", DC.getSequence() );
         DNA nucleotideDG = new DNA("G");
       assertEquals("G", nucleotideDG.getSequence() );
 
-        DNA nucleotideDa = new DNA("a");
-      assertEquals("A", nucleotideDa.getSequence() );
-        DNA nucleotideDt = new DNA("t");
-      assertEquals("T", nucleotideDt.getSequence() );
+        DNA Da = new DNA("a");
+      assertEquals("A", Da.getSequence() );
+        DNA Dt = new DNA("t");
+      assertEquals("T", Dt.getSequence() );
         DNA Dc = new DNA("c");
-      assertEquals("C", nucleotideDc.getSequence() );
+      assertEquals("C", Dc.getSequence() );
         DNA Dg = new DNA("g");
-      assertEquals("G", nucleotideDg.getSequence() );
+      assertEquals("G", Dg.getSequence() );
 
-      RNA nucleotideRA = new RNA("A");
-      assertEquals("A", nucleotideRA.getSequence() );
-        RNA nucleotideRU = new RNA("U");
-      assertEquals("U", nucleotideRU.getSequence() );
-        RNA nucleotideRC = new RNA("C");
-      assertEquals("C", nucleotideRC.getSequence() );
-        RNA nucleotideRG = new RNA("G");
-      assertEquals("G", nucleotideRG.getSequence() );
+      RNA RA = new RNA("A");
+      assertEquals("A", RA.getSequence() );
+        RNA RU = new RNA("U");
+      assertEquals("U", RU.getSequence() );
+        RNA RC = new RNA("C");
+      assertEquals("C", RC.getSequence() );
+        RNA RG = new RNA("G");
+      assertEquals("G", RG.getSequence() );
 
-        RNA nucleotideRa = new RNA("a");
-      assertEquals("A", nucleotideRa.getSequence() );
-        RNA nucleotideRu = new RNA("u");
-      assertEquals("U", nucleotideRu.getSequence() );
-        RNA nucleotideRc = new RNA("c");
-      assertEquals("C", nucleotideRc.getSequence() );
-        RNA nucleotideRg = new RNA("g");
-      assertEquals("G", nucleotideRg.getSequence() );
+        RNA Ra = new RNA("a");
+      assertEquals("A", Ra.getSequence() );
+        RNA Ru = new RNA("u");
+      assertEquals("U", Ru.getSequence() );
+        RNA Rc = new RNA("c");
+      assertEquals("C", Rc.getSequence() );
+        RNA Rg = new RNA("g");
+      assertEquals("G", Rg.getSequence() );
 
         DNA DDspace = new DNA("a  t");
         assertEquals("AT", DDspace.getSequence() );
 
-        DNA RRspace = new RNA("a  u");
+        RNA RRspace = new RNA("a  u");
         assertEquals("AU", RRspace.getSequence() );
     }
 
