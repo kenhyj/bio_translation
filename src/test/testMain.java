@@ -100,8 +100,9 @@ public class testMain {
         }
     }
 
+    /*
     @Test
-    /* testing if the single nucleotide are returned properly*/
+    // testing if the single nucleotide are returned properly
     public void testSingleDNA2cDNA(){
       DNA dA = new DNA("A");
       assertEquals("T", dA.singleDna2cdna(dA.getSequence() ));
@@ -114,7 +115,7 @@ public class testMain {
     }
 
     @Test
-    /* testing if the single nucleotide are returned properly*/
+    // testing if the single nucleotide are returned properly
     public void testSingleDNA2RNA(){
         DNA dA = new DNA("A");
         assertEquals("U", dA.singleDna2rna(dA.getSequence() ));
@@ -125,6 +126,5 @@ public class testMain {
         DNA dG = new DNA("G");
         assertEquals("C", dG.singleDna2rna(dG.getSequence() ));
     }
-
-
+    */
 }
